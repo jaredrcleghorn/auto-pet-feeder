@@ -1,10 +1,18 @@
+#include <ESP8266WebServer.h>
+#include <ESP8266WiFi.h>
+
+ESP8266WebServer server(80);
+
 void setup() {
-  pinMode(LED_BUILTIN, OUTPUT);
+	// Set up a soft access point.
+	WiFi.softAP("Auto Pet Feeder");
+
+	server.on("/", [] { server.send(200, "text/plain", "hello, world"); });
+
+	// Start the server.
+	server.begin();
 }
 
 void loop() {
-	digitalWrite(LED_BUILTIN, HIGH);
-	delay(1000);
-	digitalWrite(LED_BUILTIN, LOW);
-	delay(1000);
+	server.handleClient();
 }
