@@ -1,0 +1,15 @@
+"PCB Width"= 1940mil
+"PCB Height"= 2210mil
+"PCB Thickness"= 63mil
+"Motor Body Front Diameter"= 37mm
+"Motor Body Front Length"= 30mm
+"Motor Bearing Length"= 5mm
+"Motor Body Back Length"= 33.3mm
+"Motor PCR"= 31mm / 2
+"Large PVC Fittings Wall Thickness"= 15in / 64
+"Large PVC Pipe Outer Diameter"= 3.5in
+"Box Width"= 2 * "Motor Bearing Length" + "Motor Body Front Length" + "Motor Body Back Length" + 0.5in
+"Box Hole Center to Edge Distance"= 150mil
+"Box Ceiling and Floor Thickness"= 2 * "Box Hole Center to Edge Distance"
+"Box Height"= 2 * "Box Ceiling and Floor Thickness" + "PCB Height" + 0.5in
+"Box Back Depth"= "Large PVC Fittings Wall Thickness" + "Large PVC Pipe Outer Diameter" / 2 + "Motor Body Front Diameter" / 2
